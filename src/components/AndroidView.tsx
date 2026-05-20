@@ -42,10 +42,10 @@ export default function AndroidView({ theme, toggleTheme, onFileSelect }: Androi
   }, [])
 
   const quickActions = [
-    { title: 'Merge', icon: LayersIcon, path: '/merge', color: 'text-rose-500', bg: 'bg-rose-50 dark:bg-rose-900/20', sub: 'Combine' },
-    { title: 'Compress', icon: ZapIcon, path: '/compress', color: 'text-amber-500', bg: 'bg-amber-50 dark:bg-amber-900/20', sub: 'Optimize' },
-    { title: 'Split', icon: ScissorsIcon, path: '/split', color: 'text-blue-500', bg: 'bg-blue-50 dark:bg-blue-900/20', sub: 'Extract' },
-    { title: 'Protect', icon: LockIcon, path: '/protect', color: 'text-indigo-500', bg: 'bg-indigo-50 dark:bg-indigo-900/20', sub: 'Secure' },
+    { title: 'Merge', icon: LayersIcon, path: '/merge', color: 'text-cyan-300', bg: 'bg-cyan-400/10', sub: 'Combine' },
+    { title: 'Compress', icon: ZapIcon, path: '/compress', color: 'text-amber-300', bg: 'bg-amber-400/10', sub: 'Optimize' },
+    { title: 'Split', icon: ScissorsIcon, path: '/split', color: 'text-blue-300', bg: 'bg-blue-400/10', sub: 'Extract' },
+    { title: 'Protect', icon: LockIcon, path: '/protect', color: 'text-violet-300', bg: 'bg-violet-400/10', sub: 'Secure' },
   ]
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -56,7 +56,7 @@ export default function AndroidView({ theme, toggleTheme, onFileSelect }: Androi
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAFAFA] dark:bg-black transition-colors pb-24 text-left">
+    <div className="flex flex-col min-h-screen bg-[radial-gradient(circle_at_top_left,#E0F7FF_0%,#F7FCFF_42%,#EEF4FF_100%)] dark:bg-[radial-gradient(circle_at_top_left,#0B1222_0%,#030712_46%,#00040B_100%)] transition-colors pb-24 text-left">
       <input 
         type="file" 
         accept=".pdf" 
@@ -66,54 +66,68 @@ export default function AndroidView({ theme, toggleTheme, onFileSelect }: Androi
       />
       
       {/* Minimal Header */}
-      <header className="px-6 pt-safe pb-2 sticky top-0 z-50 bg-[#FAFAFA]/95 dark:bg-black/95 backdrop-blur-xl border-b border-transparent">
+      <header className="px-5 pt-safe pb-3 sticky top-0 z-50 bg-[#F5FBFF]/80 dark:bg-[#030712]/80 backdrop-blur-2xl border-b border-white/40 dark:border-white/5">
         <div className="flex items-center justify-between h-14">
           <div className="flex items-center gap-3">
-             <DocVaultLogo size={24} iconColor="#F43F5E" partColor="currentColor" />
+             <DocVaultLogo size={30} iconColor="#00F2FE" partColor="currentColor" />
              <div className="flex flex-col">
                 <div className="flex items-center gap-1.5">
                    <span className="text-lg font-black tracking-tighter text-gray-900 dark:text-white leading-none">DocVault</span>
-                   <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.6)]" />
+                   <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,211,238,0.9)]" />
                 </div>
-                <span className="text-[7px] font-black text-rose-500 uppercase tracking-[0.2em] mt-0.5">Secure Engine</span>
+                <span className="text-[7px] font-black text-slate-500 dark:text-cyan-300 uppercase tracking-[0.25em] mt-0.5">Local Vault</span>
              </div>
           </div>
           
           <button 
             onClick={toggleTheme}
-            className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 dark:bg-zinc-900 text-gray-500 dark:text-gray-400 active:bg-gray-200 dark:active:bg-zinc-800 transition-colors"
+            className="w-10 h-10 flex items-center justify-center rounded-2xl bg-white/70 dark:bg-white/5 text-slate-500 dark:text-cyan-200 active:bg-white dark:active:bg-white/10 transition-colors border border-white/70 dark:border-white/10 shadow-sm"
           >
             {theme === 'light' ? <MoonIcon size={18} /> : <SunIcon size={18} />}
           </button>
         </div>
       </header>
 
-      <main className="px-4 py-2 space-y-6 flex-1 overflow-y-auto scrollbar-hide">
+      <main className="px-4 py-3 space-y-5 flex-1 overflow-y-auto scrollbar-hide">
         
         {/* Command Center Hero */}
         <section>
            <button 
             onClick={() => fileInputRef.current?.click()}
-            className="w-full bg-zinc-900 dark:bg-zinc-100 rounded-[2.25rem] p-6 text-left relative overflow-hidden shadow-xl shadow-zinc-900/10 dark:shadow-[0_0_30px_rgba(244,63,94,0.15)] group active:scale-[0.98] transition-all duration-100"
+            className="w-full min-h-[250px] bg-[#07111F] rounded-[1.75rem] p-6 text-left relative overflow-hidden shadow-2xl shadow-cyan-950/20 group active:scale-[0.98] transition-all duration-100 border border-white/10"
            >
-              {/* Static Background Pattern */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500 rounded-full blur-[80px] -mr-20 -mt-20 opacity-20 dark:opacity-[0.08] pointer-events-none" />
+              <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,242,254,0.22),transparent_42%),radial-gradient(circle_at_82%_8%,rgba(79,172,254,0.45),transparent_32%)] pointer-events-none" />
+              <div className="absolute inset-0 opacity-[0.12] bg-[linear-gradient(90deg,#fff_1px,transparent_1px),linear-gradient(#fff_1px,transparent_1px)] bg-[size:28px_28px]" />
+              <div className="absolute -right-10 bottom-2 w-40 h-40 rounded-full border border-cyan-300/20" />
+              <div className="absolute right-8 bottom-12 w-20 h-20 rounded-full border border-cyan-300/30" />
               
-              <div className="relative z-10">
-                 <div className="flex justify-between items-start mb-12">
-                    <div className="p-3.5 bg-white/10 dark:bg-black/5 rounded-2xl backdrop-blur-md text-white dark:text-black border border-white/5 dark:border-black/5">
+              <div className="relative z-10 flex h-full min-h-[202px] flex-col justify-between">
+                 <div className="flex justify-between items-start">
+                    <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-md text-cyan-100 border border-white/10 shadow-inner">
                        <UploadIcon size={28} strokeWidth={2.5} />
                     </div>
-                    <div className="px-3 py-1.5 bg-rose-500 text-white rounded-full text-[9px] font-black uppercase tracking-widest shadow-sm">
-                       Start Session
+                    <div className="px-3 py-1.5 bg-cyan-400/15 text-cyan-100 border border-cyan-300/25 rounded-full text-[9px] font-black uppercase tracking-widest shadow-sm">
+                       Offline Ready
                     </div>
                  </div>
                  <div>
-                    <h2 className="text-3xl font-black text-white dark:text-black tracking-tight leading-none mb-2">Select PDF</h2>
-                    <p className="text-[11px] font-bold text-zinc-400 dark:text-zinc-600 uppercase tracking-tight">Tap to load from device storage</p>
+                    <p className="text-[9px] font-black text-cyan-300 uppercase tracking-[0.35em] mb-3">Private Workspace</p>
+                    <h2 className="text-4xl font-black text-white tracking-tighter leading-[0.9] mb-3">Open a<br/>local PDF</h2>
+                    <div className="flex items-center gap-2 text-[10px] font-bold text-cyan-100/75 uppercase tracking-wide">
+                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-300 shadow-[0_0_10px_rgba(103,232,249,0.9)]" />
+                      Device-only processing
+                    </div>
                  </div>
               </div>
            </button>
+        </section>
+
+        <section className="grid grid-cols-3 gap-2">
+          {['No Uploads', 'No Cookies', 'Open Source'].map((label) => (
+            <div key={label} className="rounded-2xl border border-white/70 dark:border-white/10 bg-white/70 dark:bg-white/[0.04] px-3 py-3 text-center shadow-sm backdrop-blur-md">
+              <p className="text-[8px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">{label}</p>
+            </div>
+          ))}
         </section>
 
         {/* Clipboard History Section */}
@@ -124,23 +138,23 @@ export default function AndroidView({ theme, toggleTheme, onFileSelect }: Androi
                   <ClipboardList size={12} className="text-gray-400" />
                   <h3 className="text-[9px] font-black uppercase tracking-[0.2em] text-gray-400 leading-none">History Clipboard</h3>
                </div>
-               <button onClick={() => navigate('/android-history')} className="text-[9px] font-black uppercase text-rose-500 tracking-wider">View All</button>
+               <button onClick={() => navigate('/android-history')} className="text-[9px] font-black uppercase text-cyan-500 tracking-wider">View All</button>
             </div>
             
-            <div className="bg-white dark:bg-zinc-900 rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm divide-y divide-gray-50 dark:divide-white/5 overflow-hidden">
+            <div className="bg-white/80 dark:bg-white/[0.04] backdrop-blur-md rounded-[1.5rem] border border-white/80 dark:border-white/10 shadow-sm divide-y divide-slate-100 dark:divide-white/5 overflow-hidden">
               {history.map((item) => (
                 <button 
                   key={item.id} 
                   onClick={() => navigate('/android-history')}
-                  className="w-full p-4 flex items-center gap-4 active:bg-gray-50 dark:active:bg-white/5 transition-colors text-left"
+                  className="w-full p-4 flex items-center gap-4 active:bg-cyan-50 dark:active:bg-white/5 transition-colors text-left"
                 >
-                  <div className="w-10 h-10 bg-gray-50 dark:bg-white/5 rounded-xl flex items-center justify-center text-gray-400 dark:text-zinc-500 shrink-0">
+                  <div className="w-10 h-10 bg-cyan-50 dark:bg-cyan-400/10 rounded-xl flex items-center justify-center text-cyan-500 dark:text-cyan-300 shrink-0">
                     <FileTextIcon size={18} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-bold truncate text-gray-900 dark:text-white leading-tight mb-0.5">{item.name}</p>
                     <div className="flex items-center gap-2">
-                       <span className="text-[9px] text-rose-500 font-black uppercase tracking-tight">{item.tool}</span>
+                       <span className="text-[9px] text-cyan-500 font-black uppercase tracking-tight">{item.tool}</span>
                        <span className="text-[14px] text-gray-200 dark:text-zinc-800 leading-none">•</span>
                        <span className="text-[9px] text-gray-400 font-bold uppercase tracking-tight">{(item.size / (1024*1024)).toFixed(2)} MB</span>
                     </div>
@@ -163,7 +177,7 @@ export default function AndroidView({ theme, toggleTheme, onFileSelect }: Androi
                 <button
                   key={action.title}
                   onClick={() => navigate(action.path)}
-                  className="p-5 bg-white dark:bg-zinc-900 rounded-[2rem] border border-gray-100 dark:border-white/5 flex flex-col justify-between h-32 shadow-sm active:bg-gray-50 dark:active:bg-white/5 transition-colors text-left relative overflow-hidden"
+                  className="p-5 bg-white/80 dark:bg-white/[0.045] backdrop-blur-md rounded-[1.5rem] border border-white/80 dark:border-white/10 flex flex-col justify-between h-32 shadow-sm active:bg-cyan-50 dark:active:bg-white/10 transition-colors text-left relative overflow-hidden"
                 >
                   <div className={`w-10 h-10 ${action.bg} ${action.color} rounded-xl flex items-center justify-center mb-2`}>
                     <action.icon size={20} strokeWidth={2.5} />
@@ -177,7 +191,7 @@ export default function AndroidView({ theme, toggleTheme, onFileSelect }: Androi
 
               <button
                 onClick={() => navigate('/android-tools')}
-                className="col-span-2 p-5 bg-rose-500 text-white rounded-[2rem] flex items-center justify-between shadow-lg shadow-rose-500/20 active:bg-rose-600 transition-colors group relative overflow-hidden"
+                className="col-span-2 p-5 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-[1.5rem] flex items-center justify-between shadow-lg shadow-cyan-500/20 active:brightness-95 transition-colors group relative overflow-hidden"
               >
                  <div className="absolute right-0 top-0 p-4 opacity-10 pointer-events-none">
                     <LayoutGridIcon size={100} />

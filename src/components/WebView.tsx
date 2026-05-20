@@ -14,11 +14,11 @@ import { Tool, ToolCategory } from '../types'
 
 const categoryColors: Record<ToolCategory, { bg: string, text: string, border: string, hover: string, glow: string }> = {
   Edit: { 
-    bg: 'bg-rose-50 dark:bg-rose-900/20', 
-    text: 'text-rose-500', 
-    border: 'border-rose-100 dark:border-rose-900/30',
-    hover: 'group-hover:bg-rose-500',
-    glow: 'dark:hover:shadow-rose-900/20'
+    bg: 'bg-cyan-50 dark:bg-cyan-950/20', 
+    text: 'text-cyan-500', 
+    border: 'border-cyan-100 dark:border-cyan-950/30',
+    hover: 'group-hover:bg-cyan-500',
+    glow: 'dark:hover:shadow-cyan-950/20'
   },
   Secure: { 
     bg: 'bg-indigo-50 dark:bg-indigo-900/20', 
@@ -49,15 +49,15 @@ const ToolCard = ({ title, desc, icon: Icon, onClick, category }: Tool & { onCli
   return (
     <button 
       onClick={onClick}
-      className="group relative flex flex-col p-6 rounded-[2rem] bg-white dark:bg-zinc-900/40 border border-gray-100 dark:border-white/5 hover:border-rose-500/50 dark:hover:border-rose-500/50 transition-all duration-300 text-left hover:shadow-2xl hover:shadow-rose-500/5 hover:-translate-y-1"
+      className="group relative flex flex-col p-6 rounded-[2rem] bg-white dark:bg-zinc-900/40 border border-gray-100 dark:border-white/5 hover:border-cyan-500/50 dark:hover:border-cyan-500/50 transition-all duration-300 text-left hover:shadow-2xl hover:shadow-cyan-500/5 hover:-translate-y-1"
     >
-      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-5 ${colors.bg} ${colors.text} group-hover:bg-rose-500 group-hover:text-white transition-all duration-500`}>
+      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-5 ${colors.bg} ${colors.text} group-hover:bg-cyan-500 group-hover:text-white transition-all duration-500`}>
         <Icon size={24} strokeWidth={2} />
       </div>
-      <h3 className="font-black text-gray-900 dark:text-white mb-2 text-lg tracking-tight group-hover:text-rose-500 transition-colors">{title}</h3>
+      <h3 className="font-black text-gray-900 dark:text-white mb-2 text-lg tracking-tight group-hover:text-cyan-500 transition-colors">{title}</h3>
       <p className="text-sm text-gray-500 dark:text-zinc-400 font-medium leading-relaxed line-clamp-2">{desc}</p>
       
-      <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-rose-500">
+      <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-500">
         <ChevronRightIcon size={20} />
       </div>
     </button>
@@ -81,22 +81,35 @@ export default function WebView({ tools }: { tools: Tool[] }) {
   }, [tools, searchQuery, activeCategory])
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] dark:bg-black transition-colors duration-500">
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 px-6 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.05),transparent_70%)] pointer-events-none" />
-        
-        <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 dark:bg-rose-900/20 text-rose-500 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-8 border border-rose-100 dark:border-rose-900/30">
-            <SparklesIcon size={14} /> Professional PDF Engine
-          </div>
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter dark:text-white mb-8 leading-[0.9]">
-            Stop Uploading <br/>
-            <span className="text-rose-500">Your Privacy.</span>
-          </h1>
-          
-          <div className="max-w-2xl mx-auto relative group mt-12">
-            <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none text-gray-400 group-focus-within:text-rose-500 transition-colors">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,#E0F7FF_0%,#F7FCFF_42%,#EEF4FF_100%)] dark:bg-[radial-gradient(circle_at_top_left,#0B1222_0%,#030712_46%,#00040B_100%)] transition-colors duration-500">
+      <section className="relative px-6 py-10 md:py-14 overflow-hidden">
+        <div className="max-w-7xl mx-auto relative overflow-hidden rounded-[2.25rem] bg-[#07111F] border border-white/10 shadow-2xl shadow-cyan-950/20">
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,242,254,0.22),transparent_42%),radial-gradient(circle_at_82%_8%,rgba(79,172,254,0.45),transparent_32%)]" />
+          <div className="absolute inset-0 opacity-[0.1] bg-[linear-gradient(90deg,#fff_1px,transparent_1px),linear-gradient(#fff_1px,transparent_1px)] bg-[size:36px_36px]" />
+          <div className="relative grid gap-10 md:grid-cols-[1.05fr_0.95fr] items-center p-7 md:p-12">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-400/10 text-cyan-200 rounded-full text-[10px] font-black uppercase tracking-[0.25em] mb-7 border border-cyan-300/20">
+                <SparklesIcon size={14} /> Local Vault Workspace
+              </div>
+              <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-white mb-6 leading-[0.9]">
+                Private PDFs, <br/>
+                <span className="text-cyan-300">zero detours.</span>
+              </h1>
+              <p className="max-w-xl text-sm md:text-base text-slate-300 font-medium leading-relaxed">
+                Run document tools in your browser with a sharp desktop workspace built for quick scanning, local processing, and repeated use.
+              </p>
+            </div>
+
+            <div className="rounded-[1.75rem] bg-white/8 border border-white/10 p-5 backdrop-blur-md">
+              <div className="grid grid-cols-3 gap-3 mb-5">
+                {['Local', 'Offline', 'Private'].map((label) => (
+                  <div key={label} className="rounded-2xl bg-white/10 border border-white/10 px-3 py-4 text-center">
+                    <p className="text-[9px] font-black uppercase tracking-widest text-cyan-200">{label}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="relative group">
+            <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none text-gray-400 group-focus-within:text-cyan-500 transition-colors">
               <SearchIcon size={22} />
             </div>
             <input 
@@ -104,8 +117,10 @@ export default function WebView({ tools }: { tools: Tool[] }) {
               placeholder="Search tools (e.g. merge, compress, protect...)"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-white dark:bg-zinc-900 border border-gray-100 dark:border-white/5 rounded-[2rem] py-6 pl-16 pr-8 shadow-2xl shadow-gray-200/50 dark:shadow-none focus:border-rose-500 focus:ring-4 focus:ring-rose-500/10 outline-none transition-all font-bold text-xl dark:text-white"
+              className="w-full bg-white/95 border border-white/20 rounded-[1.35rem] py-5 pl-16 pr-8 shadow-2xl shadow-cyan-950/20 focus:border-cyan-300 focus:ring-4 focus:ring-cyan-300/20 outline-none transition-all font-bold text-lg text-slate-900"
             />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -122,7 +137,7 @@ export default function WebView({ tools }: { tools: Tool[] }) {
                   <button
                     key={cat}
                     onClick={() => setActiveCategory(cat)}
-                    className={`px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] transition-all border ${activeCategory === cat ? 'bg-zinc-900 dark:bg-white text-white dark:text-black border-transparent shadow-lg' : 'bg-white dark:bg-zinc-900 text-gray-400 border-gray-100 dark:border-white/5 hover:border-rose-500'}`}
+                    className={`px-6 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] transition-all border ${activeCategory === cat ? 'bg-cyan-400 text-slate-950 border-transparent shadow-lg shadow-cyan-500/20' : 'bg-white/80 dark:bg-white/[0.045] text-slate-500 dark:text-slate-400 border-white/80 dark:border-white/10 hover:border-cyan-400'}`}
                   >
                     {cat}
                   </button>
@@ -148,7 +163,7 @@ export default function WebView({ tools }: { tools: Tool[] }) {
                 </div>
                 <h3 className="text-2xl font-black dark:text-white mb-2">No tools matched.</h3>
                 <p className="text-gray-500 dark:text-zinc-400 font-medium">Try searching for a different keyword or clear your filters.</p>
-                <button onClick={() => { setSearchQuery(''); setActiveCategory('All'); }} className="mt-8 text-rose-500 font-black uppercase tracking-widest text-xs hover:underline underline-offset-8">Reset Dashboard</button>
+                <button onClick={() => { setSearchQuery(''); setActiveCategory('All'); }} className="mt-8 text-cyan-500 font-black uppercase tracking-widest text-xs hover:underline underline-offset-8">Reset Dashboard</button>
               </div>
             )}
           </div>

@@ -6,8 +6,8 @@
 
 **A simple, honest PDF utility that respects your privacy.**
 
-[![License](https://img.shields.io/badge/license-AGPL--3.0-rose.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/Gnanendra494/DocVault?style=flat&color=rose)](https://github.com/Gnanendra494/DocVault/stargazers)
+[![License](https://img.shields.io/badge/license-AGPL--3.0-00f2fe.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Gnanendra494/DocVault?style=flat&color=00f2fe)](https://github.com/Gnanendra494/DocVault/stargazers)
 [![Web App](https://img.shields.io/badge/web-live-emerald.svg)](https://Gnanendra494.github.io/DocVault/)
 [![Android App](https://img.shields.io/badge/android-apk-blue.svg)](https://github.com/Gnanendra494/DocVault/releases/latest)
 [![Twitter](https://img.shields.io/badge/twitter-@Gnanendra494-black?logo=x)](https://x.com/Gnanendra494)

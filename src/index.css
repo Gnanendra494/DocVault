@@ -35,7 +35,7 @@
 }
 
 html, body {
-  @apply bg-[#FAFAFA] dark:bg-black;
+  @apply bg-[#F5FBFF] dark:bg-[#030712];
   margin: 0;
   padding: 0;
   height: 100%;
@@ -44,7 +44,7 @@ html, body {
 
 body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  @apply text-gray-900 dark:text-zinc-100 bg-[#FAFAFA] dark:bg-black transition-colors duration-500 ease-in-out;
+  @apply text-gray-900 dark:text-zinc-100 bg-[#F5FBFF] dark:bg-[#030712] transition-colors duration-500 ease-in-out;
   overflow-x: hidden;
 }
 
