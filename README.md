@@ -25,7 +25,7 @@
 
 ### Why I built this
 
-Most PDF websites ask you to upload your sensitive documents—bank statements, IDs, contracts—to their servers. Even if they promise to delete them, your data still leaves your device and travels across the internet.
+Most PDF websites ask you to upload your sensitive documents-bank statements, IDs, contracts-to their servers. Even if they promise to delete them, your data still leaves your device and travels across the internet.
 
 I built **DocVault** to solve this. It's a collection of tools that run entirely in your browser or on your phone. Your files never leave your memory, they aren't stored in any database, and no server ever sees them. It works 100% offline.
 
