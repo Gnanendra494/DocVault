@@ -40,11 +40,11 @@ I built **DocVault** to solve this. It's a collection of tools that run entirely
 
 ### How to use it
 
-*   **On Android:** Download the [latest APK](https://github.com/yourusername/DocVault/releases/latest) or get it from:
+*   **On Android:** Download the [latest APK](https://github.com/Gnanendra494/DocVault/releases/latest) or get it from:
 
 [<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroidButtonGreyBorder_nofont.png" height="80" alt="Get it at IzzyOnDroid">](https://apt.izzysoft.de/packages/com.docvault.app)
 
-*   **On the Web:** Visit the [live site](https://yourusername.github.io/DocVault/). You can use it like any other website, or "install" it as a PWA for offline access.
+*   **On the Web:** Visit the [live site](https://Gnanendra494.github.io/DocVault/). You can use it like any other website, or "install" it as a PWA for offline access.
 
 ---
 
@@ -53,7 +53,7 @@ I built **DocVault** to solve this. It's a collection of tools that run entirely
 DocVault is a solo project. It's open-source, ad-free, and tracker-free because I believe privacy is a right, not a luxury.
 
 If this tool has saved you time or kept your data safe, please consider:
-*   **Sponsoring:** Support development via [GitHub Sponsors](https://github.com/sponsors/yourusername).
+*   **Sponsoring:** Support development via [GitHub Sponsors] (https://github.com/sponsors/Gnanendra494).
 *   **Giving a Star:** It helps other people find the project.
 *   **Spreading the word:** Share it with anyone who handles sensitive documents.
 
@@ -66,4 +66,4 @@ DocVault is built with **React** and **TypeScript**. The core processing is hand
 This project is licensed under the **GNU AGPL v3** to ensure it remains open and transparent forever.
 
 ---
-*Made with care by [yourusername](https://github.com/yourusername)*
+*Made with care by [Gnanendra494](https://github.com/Gnanendra494)*

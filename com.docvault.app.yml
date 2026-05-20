@@ -2,9 +2,9 @@ Categories:
   - Security
   - Writing
 License: AGPL-3.0-or-later
-WebSite: https://yourusername.github.io/DocVault/
-SourceCode: https://github.com/yourusername/DocVault
-IssueTracker: https://github.com/yourusername/DocVault/issues
+WebSite: https://Gnanendra494.github.io/DocVault/
+SourceCode: https://github.com/Gnanendra494/DocVault
+IssueTracker: https://github.com/Gnanendra494/DocVault/issues
 
 AutoName: DocVault
 
@@ -26,9 +26,9 @@ Description: |-
   no analytics, and no advertisements.
 
 RepoType: git
-Repo: https://github.com/yourusername/DocVault.git
+Repo: https://github.com/Gnanendra494/DocVault.git
 Binaries: 
-  https://github.com/yourusername/DocVault/releases/download/v%v/docvault-lite-v%v.apk
+  https://github.com/Gnanendra494/DocVault/releases/download/v%v/docvault-lite-v%v.apk
 
 Builds:
   - versionName: 1.0.9

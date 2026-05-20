@@ -85,7 +85,7 @@ const AboutWeb = () => {
                  DocVault is self-funded and ad-free. Your support ensures the project stays alive and free for everyone.
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-3">
-                 <a href="https://github.com/sponsors/yourusername" target="_blank" className="px-8 py-3.5 bg-white text-cyan-500 rounded-2xl font-black uppercase tracking-widest text-[10px] hover:scale-105 transition-transform shadow-lg flex items-center gap-2">
+                 <a href="https://github.com/sponsors/Gnanendra494" target="_blank" className="px-8 py-3.5 bg-white text-cyan-500 rounded-2xl font-black uppercase tracking-widest text-[10px] hover:scale-105 transition-transform shadow-lg flex items-center gap-2">
                     <HeartIcon size={14} fill="currentColor" /> Sponsor
                  </a>
                  <button onClick={() => navigate('/thanks')} className="px-8 py-3.5 bg-cyan-500 text-white border border-cyan-300/50 rounded-2xl font-black uppercase tracking-widest text-[10px] hover:bg-cyan-600 transition-colors flex items-center gap-2">
@@ -151,7 +151,7 @@ const AboutWeb = () => {
       {/* 4. Final Footer Links - Condensed */}
       <section className="max-w-4xl mx-auto px-6 text-center border-t border-gray-100 dark:border-zinc-900 pt-16">
         <div className="flex flex-wrap justify-center gap-8 mb-12">
-           <a href="https://github.com/yourusername/DocVault" target="_blank" className="flex items-center gap-2.5 text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-cyan-500 transition-colors group">
+           <a href="https://github.com/Gnanendra494/DocVault" target="_blank" className="flex items-center gap-2.5 text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-cyan-500 transition-colors group">
               <GHIcon size={16} /> Audit Source <ExternalLinkIcon size={12} className="opacity-40 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
            </a>
            <button onClick={() => navigate('/thanks')} className="flex items-center gap-2.5 text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-cyan-500 transition-colors group">
@@ -161,7 +161,7 @@ const AboutWeb = () => {
         
         <div className="opacity-20 hover:opacity-50 transition-opacity duration-700">
           <DocVaultLogo size={32} iconColor="#00F2FE" partColor="currentColor" className="mx-auto mb-4" />
-          <p className="text-[9px] font-black uppercase tracking-[0.6em] text-gray-400">yourusername</p>
+          <p className="text-[9px] font-black uppercase tracking-[0.6em] text-gray-400">Gnanendra494</p>
         </div>
       </section>
 
@@ -202,7 +202,7 @@ const AboutAPK = () => {
                  We are 100% self-funded. Your support ensures DocVault stays free and open for everyone.
               </p>
               <div className="grid grid-cols-2 gap-3">
-                 <a href="https://github.com/sponsors/yourusername" target="_blank" className="flex items-center justify-center gap-2 py-3 bg-white text-cyan-500 rounded-xl font-black uppercase text-[9px] tracking-widest shadow-sm active:scale-95 transition-transform">
+                 <a href="https://github.com/sponsors/Gnanendra494" target="_blank" className="flex items-center justify-center gap-2 py-3 bg-white text-cyan-500 rounded-xl font-black uppercase text-[9px] tracking-widest shadow-sm active:scale-95 transition-transform">
                     Sponsor
                  </a>
                  <button onClick={() => navigate('/thanks')} className="flex items-center justify-center gap-2 py-3 bg-cyan-500 text-white border border-cyan-300/50 rounded-xl font-black uppercase text-[9px] tracking-widest active:scale-95 transition-transform">
@@ -243,7 +243,7 @@ const AboutAPK = () => {
 
         {/* 4. Action Tiles */}
         <div className="grid grid-cols-1 gap-2 pt-2">
-          <a href="https://github.com/yourusername/DocVault" target="_blank" className="flex items-center justify-between p-5 bg-white dark:bg-zinc-900 border border-gray-100 dark:border-white/5 rounded-[2rem] active:scale-[0.98] transition-all">
+          <a href="https://github.com/Gnanendra494/DocVault" target="_blank" className="flex items-center justify-between p-5 bg-white dark:bg-zinc-900 border border-gray-100 dark:border-white/5 rounded-[2rem] active:scale-[0.98] transition-all">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 bg-zinc-100 dark:bg-[#030712] rounded-xl flex items-center justify-center">
                    <GHIcon size={20} className="text-black dark:text-white" />
@@ -270,7 +270,7 @@ const AboutAPK = () => {
           </button>
         </div>
 
-        <p className="text-[8px] font-black uppercase text-center text-gray-400 tracking-[0.5em] pt-8 pb-4">Handcrafted by yourusername</p>
+        <p className="text-[8px] font-black uppercase text-center text-gray-400 tracking-[0.5em] pt-8 pb-4">Handcrafted by Gnanendra494</p>
       </div>
     </NativeToolLayout>
   )

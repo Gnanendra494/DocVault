@@ -75,7 +75,7 @@ export default function AndroidView({ theme, toggleTheme, onFileSelect }: Androi
                    <span className="text-lg font-black tracking-tighter text-gray-900 dark:text-white leading-none">DocVault</span>
                    <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,211,238,0.9)]" />
                 </div>
-                <span className="text-[7px] font-black text-slate-500 dark:text-cyan-300 uppercase tracking-[0.25em] mt-0.5">Local Vault</span>
+                <span className="text-[7px] font-black text-slate-500 dark:text-cyan-300 uppercase tracking-[0.25em] mt-0.5"> 100% SECURE ENGINE </span>
              </div>
           </div>
           
