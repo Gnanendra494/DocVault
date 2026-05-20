@@ -1,14 +1,18 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
   <defs>
-    <linearGradient id="docvaultGradientLarge" x1="0" y1="0" x2="512" y2="512">
-      <stop offset="0%" stop-color="#0EA5E9" />
-      <stop offset="100%" stop-color="#0B63C3" />
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
     </linearGradient>
+    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="25" flood-color="#00f2fe" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
   </defs>
-  <rect width="512" height="512" rx="120" fill="url(#docvaultGradientLarge)" />
-  <rect x="128" y="160" width="256" height="232" rx="72" fill="#FFFFFF" />
-  <path d="M176 160V128C176 108.3269 190.3269 94 210 94H302C321.673 94 336 108.3269 336 128V160" stroke="#0EA5E9" stroke-width="32" stroke-linecap="round" />
-  <rect x="204" y="236" width="104" height="132" rx="32" fill="#0EA5E9" />
-  <path d="M245 298a33 33 0 1 1 66 0 33 33 0 1 1 -66 0" fill="#FFFFFF" />
-  <rect x="250" y="338" width="12" height="56" rx="6" fill="#FFFFFF" />
+  <rect width="1024" height="1024" fill="url(#bg)" rx="225" />
+  <text x="512" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="160" font-weight="900" fill="url(#textGlow)" filter="url(#neon)" text-anchor="middle" letter-spacing="4">DocVault</text>
 </svg>

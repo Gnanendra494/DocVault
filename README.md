@@ -7,18 +7,18 @@
 **A simple, honest PDF utility that respects your privacy.**
 
 [![License](https://img.shields.io/badge/license-AGPL--3.0-rose.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/DocVault?style=flat&color=rose)](https://github.com/yourusername/DocVault/stargazers)
-[![Web App](https://img.shields.io/badge/web-live-emerald.svg)](https://yourusername.github.io/DocVault/)
-[![Android App](https://img.shields.io/badge/android-apk-blue.svg)](https://github.com/yourusername/DocVault/releases/latest)
-[![Twitter](https://img.shields.io/badge/twitter-@yourusername-black?logo=x)](https://x.com/yourusername)
+[![GitHub Stars](https://img.shields.io/github/stars/Gnanendra494/DocVault?style=flat&color=rose)](https://github.com/Gnanendra494/DocVault/stargazers)
+[![Web App](https://img.shields.io/badge/web-live-emerald.svg)](https://Gnanendra494.github.io/DocVault/)
+[![Android App](https://img.shields.io/badge/android-apk-blue.svg)](https://github.com/Gnanendra494/DocVault/releases/latest)
+[![Twitter](https://img.shields.io/badge/twitter-@Gnanendra494-black?logo=x)](https://x.com/Gnanendra494)
 
 ---
 
 ## Preview
 
 <p align="center">
-  <img src="assets/preview/screenshot1.jpg" width="45%" alt="DocVault Web Preview">
-  <img src="assets/preview/screenshot2.jpg" width="45%" alt="DocVault Mobile Preview">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg" width="45%" alt="DocVault Home Preview">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg" width="45%" alt="DocVault Tools Preview">
 </p>
 
 ---
