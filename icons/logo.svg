@@ -1,19 +1,18 @@
-<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
   <defs>
-    <linearGradient id="docvaultBg" x1="0" y1="0" x2="24" y2="24">
-      <stop offset="0%" stop-color="#0EA5E9" />
-      <stop offset="100%" stop-color="#0B63C3" />
-    </linearGradient>
-    <radialGradient id="docvaultGlow" cx="12" cy="8" r="8" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="#0B1638" stop-opacity="0" />
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#000000" />
     </radialGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="25" flood-color="#00f2fe" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
   </defs>
-  <rect width="24" height="24" rx="6" fill="url(#docvaultBg)" />
-  <circle cx="12" cy="9" r="7.2" fill="url(#docvaultGlow)" />
-  <path d="M6.2 9.1h11.6c0.77 0 1.4 0.63 1.4 1.4v3.8c0 0.77-0.63 1.4-1.4 1.4H6.2c-0.77 0-1.4-0.63-1.4-1.4V10.5c0-0.77 0.63-1.4 1.4-1.4Z" fill="rgba(255,255,255,0.18)" />
-  <path d="M7.5 10.4h9c0.41 0 0.75 0.34 0.75 0.75v2.6c0 0.41-0.34 0.75-0.75 0.75h-9c-0.41 0-0.75-0.34-0.75-0.75v-2.6c0-0.41 0.34-0.75 0.75-0.75Z" fill="#FFFFFF" />
-  <circle cx="12" cy="13.7" r="1.15" fill="#0EA5E9" />
-  <path d="M12 15.4v1.2" stroke="#0EA5E9" stroke-width="1.2" stroke-linecap="round" />
-  <path d="M7.8 11.5v3.7C7.8 17.58 9.92 19.7 12.6 19.7h-0.6c2.68 0 4.8-2.12 4.8-4.8v-3.7" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect width="1024" height="1024" fill="url(#bg)" rx="225" />
+  <text x="512" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="160" font-weight="900" fill="url(#textGlow)" filter="url(#neon)" text-anchor="middle" letter-spacing="4">DocVault</text>
 </svg>
