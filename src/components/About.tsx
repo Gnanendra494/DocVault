@@ -202,7 +202,7 @@ const AboutAPK = () => {
                  We are 100% self-funded. Your support ensures DocVault stays free and open for everyone.
               </p>
               <div className="grid grid-cols-2 gap-3">
-                 <a href="https://github.com/sponsors/Gnanendra494" target="_blank" className="flex items-center justify-center gap-2 py-3 bg-white text-cyan-500 rounded-xl font-black uppercase text-[9px] tracking-widest shadow-sm active:scale-95 transition-transform">
+                 <a href="https://github.com/Gnanendra494" target="_blank" className="flex items-center justify-center gap-2 py-3 bg-white text-cyan-500 rounded-xl font-black uppercase text-[9px] tracking-widest shadow-sm active:scale-95 transition-transform">
                     Sponsor
                  </a>
                  <button onClick={() => navigate('/thanks')} className="flex items-center justify-center gap-2 py-3 bg-cyan-500 text-white border border-cyan-300/50 rounded-xl font-black uppercase text-[9px] tracking-widest active:scale-95 transition-transform">
