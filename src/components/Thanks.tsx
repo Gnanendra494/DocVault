@@ -48,7 +48,7 @@ export default function Thanks() {
             <p className="text-zinc-400 text-sm font-medium leading-relaxed max-w-lg mb-8 mx-auto md:mx-0">
               The heroes who fuel the engine. Your support ensures DocVault stays free and private forever. Sponsors receive a permanent shout-out here.
             </p>
-            <a href="https://github.com/sponsors/yourusername" target="_blank" className="inline-flex items-center gap-3 px-8 py-3.5 bg-white text-cyan-500 rounded-2xl font-black uppercase tracking-widest text-[10px] hover:scale-105 transition-transform shadow-lg">
+            <a href="https://github.com/sponsors/Gnanendra494" target="_blank" className="inline-flex items-center gap-3 px-8 py-3.5 bg-white text-cyan-500 rounded-2xl font-black uppercase tracking-widest text-[10px] hover:scale-105 transition-transform shadow-lg">
               <HeartIcon size={14} fill="currentColor" /> Sponsor Project
             </a>
           </div>

@@ -229,13 +229,13 @@ export default function Settings({ theme, setTheme }: { theme: Theme, setTheme: 
             title="Sponsor Project" 
             subtitle="Fuel development"
             iconColor="text-cyan-500 bg-cyan-50 dark:bg-cyan-950/20"
-            onClick={() => window.open('https://github.com/sponsors/yourusername', '_blank')}
+            onClick={() => window.open('https://github.com/sponsors/Gnanendra494', '_blank')}
           />
           <SettingItem 
             icon={Bug} 
             title="Report Issue" 
             subtitle="GitHub Tracker"
-            onClick={() => window.open('https://github.com/yourusername/DocVault/issues', '_blank')}
+            onClick={() => window.open('https://github.com/Gnanendra494/DocVault/issues', '_blank')}
           />
           <SettingItem 
             icon={Info} 

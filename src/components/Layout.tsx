@@ -243,8 +243,8 @@ export default function Layout({ children, theme, toggleTheme, tools, onFileDrop
               <div className="col-span-1 md:col-span-3">
                 <h4 className="font-bold text-[10px] uppercase tracking-widest text-gray-900 dark:text-white mb-4">Ecosystem</h4>
                 <ul className="space-y-2.5 text-xs text-gray-500 dark:text-zinc-500">
-                  <li><a href="https://github.com/sponsors/yourusername" target="_blank" className="flex items-center gap-2 hover:text-cyan-500 transition-colors">Sponsor <HeartIcon size={10} className="text-cyan-500" /></a></li>
-                  <li><a href="https://github.com/yourusername/DocVault/issues" target="_blank" className="hover:text-cyan-500 transition-colors">Report Bug</a></li>
+                  <li><a href="https://github.com/sponsors/Gnanendra494" target="_blank" className="flex items-center gap-2 hover:text-cyan-500 transition-colors">Sponsor <HeartIcon size={10} className="text-cyan-500" /></a></li>
+                  <li><a href="https://github.com/Gnanendra494/DocVault/issues" target="_blank" className="hover:text-cyan-500 transition-colors">Report Bug</a></li>
                   <li><Link to="/thanks" className="hover:text-cyan-500 transition-colors">Hall of Fame</Link></li>
                 </ul>
               </div>
