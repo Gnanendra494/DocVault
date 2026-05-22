@@ -223,7 +223,7 @@ export default function Layout({ children, theme, toggleTheme, tools, onFileDrop
                       <div className="w-1 h-1 rounded-full bg-emerald-500 animate-pulse" />
                       Live Engine
                    </div>
-                   <a href="https://github.com/yourusername/DocVault" target="_blank" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-xl hover:bg-cyan-500 hover:text-white transition-all text-gray-500 dark:text-zinc-500">
+                  <a href="https://github.com/Gnanendra494/DocVault" target="_blank" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-xl hover:bg-cyan-500 hover:text-white transition-all text-gray-500 dark:text-zinc-500">
                      <GHIcon size={14} />
                    </a>
                 </div>
@@ -235,7 +235,7 @@ export default function Layout({ children, theme, toggleTheme, tools, onFileDrop
                 <ul className="space-y-2.5 text-xs text-gray-500 dark:text-zinc-500">
                   <li><Link to="/about" className="hover:text-cyan-500 transition-colors">About</Link></li>
                   <li><Link to="/privacy" className="hover:text-cyan-500 transition-colors">Privacy Spec</Link></li>
-                  <li><a href="https://github.com/yourusername/DocVault/blob/main/LICENSE" target="_blank" className="hover:text-cyan-500 transition-colors">License</a></li>
+                  <li><a href="https://github.com/Gnanendra494/DocVault/blob/main/LICENSE" target="_blank" className="hover:text-cyan-500 transition-colors">License</a></li>
                 </ul>
               </div>
 
@@ -254,7 +254,7 @@ export default function Layout({ children, theme, toggleTheme, tools, onFileDrop
             <div className="pt-6 border-t border-gray-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-gray-400 dark:text-zinc-600 font-medium">
               <p>© 2026 DocVault Project. No cookies used.</p>
               <div className="flex gap-6 items-center">
-                 <a href="https://github.com/yourusername" target="_blank" className="hover:text-gray-900 dark:hover:text-white transition-colors">@yourusername</a>
+                 <a href="https://github.com/Gnanendra494" target="_blank" className="hover:text-gray-900 dark:hover:text-white transition-colors">@Gnanendra494</a>
               </div>
             </div>
           </div>

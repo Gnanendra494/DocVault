@@ -168,7 +168,7 @@ export default function Settings({ theme, setTheme }: { theme: Theme, setTheme: 
                 setDefaultAuthor(e.target.value)
                 localStorage.setItem('defaultAuthor', e.target.value)
               }}
-              placeholder="e.g. yourusername"
+              placeholder="e.g. Gnanendra494"
               className="w-full bg-gray-100 dark:bg-[#030712] border border-transparent focus:border-cyan-500 rounded-xl px-4 py-3.5 text-xs font-black outline-none transition-all placeholder:text-gray-400 dark:text-white"
             />
           </div>

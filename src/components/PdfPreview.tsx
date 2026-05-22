@@ -1,6 +1,6 @@
 /**
  * DocVault - The Swiss Army Knife for PDFs
- * Copyright (C) 2026 yourusername
+ * Copyright (C) 2026 Gnanendra494
  */
 
 import { useState, useEffect, useRef } from 'react'

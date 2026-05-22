@@ -1,6 +1,6 @@
 /**
  * DocVault - The Swiss Army Knife for PDFs
- * Copyright (C) 2026 yourusername
+ * Copyright (C) 2026 Gnanendra494
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
