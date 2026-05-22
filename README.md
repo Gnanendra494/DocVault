@@ -40,10 +40,6 @@ I built **DocVault** to solve this. It's a collection of tools that run entirely
 
 ### How to use it
 
-*   **On Android:** Download the [latest APK](https://github.com/Gnanendra494/DocVault/releases/latest) or get it from:
-
-[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroidButtonGreyBorder_nofont.png" height="80" alt="Get it at IzzyOnDroid">](https://apt.izzysoft.de/packages/com.docvault.app)
-
 *   **On the Web:** Visit the [live site](https://Gnanendra494.github.io/DocVault/). You can use it like any other website, or "install" it as a PWA for offline access.
 
 ---
